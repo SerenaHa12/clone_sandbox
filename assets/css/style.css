@@ -46,7 +46,8 @@
 /* 2.1 Header Nav */
 header{
     min-height: 100vh;
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
     background-color: var(--bg-color);
     background-image: url(../img/header/blurry.png);
     background-size: cover;
@@ -57,14 +58,8 @@ header{
 
 header nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 2%;
-    margin: 0 8%;
-}
-
-header nav .nav-logo{
-    width: 200px;
 }
 
 header nav ul{
@@ -107,19 +102,22 @@ header nav ul li a::after{
     content: '\f078';
 }
 
-header nav .nav-btn{
-    width: 200px;
-    display: flex;
-    justify-content: flex-end;
-}
-
 /* 2.2 Header Banner */
 header .banner{
     align-items: center;
     text-align: center;
+    margin: 100px 0;
 }
 
 header .banner h1{
     width: 740px;
     margin: 0 auto;
+}
+
+header .banner h1 span{
+    color: var(--purple-color)
+}
+
+header .banner p{
+    margin: 40px 0;
 }
