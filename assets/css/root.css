@@ -1,0 +1,55 @@
+:root{
+    --primary-color: #343f52;
+    --purple-color: #605dba;
+    --pink-color: #e668b3;
+    --gray-color: #b1b0bc;
+
+    --bg-color: #f0f0f8;
+
+    --border-radius: 0.8rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+h1{
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 74px;
+    color: #343f52;
+    font-style: normal;
+}
+
+h2{
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 53px;
+    color: #343f52;
+    font-style: normal;
+}
+
+h3{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 23px;
+    color: #aaa0bc;
+    font-style: normal;
+}
+
+h4{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #343f52;
+    font-style: normal;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
