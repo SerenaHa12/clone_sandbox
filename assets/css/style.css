@@ -1,0 +1,125 @@
+/* 1. Sub-header */
+.sub-header{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(43deg,#4158d0 0,#c850c0 46%,#ffcc70 100%);
+}
+
+.sub-header .star{
+    color: var(--yellow-color);
+}
+
+.sub-header span{
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--white-color);
+    margin: 14px 4px;
+}
+
+.sub-header span a{
+    color: var(--white-color);
+    text-decoration: none;
+    position: relative;
+}
+
+.sub-header span a::before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: 7px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--white-color);
+    display: block;
+}
+
+.sub-header span a:hover::before{
+    content: '';
+    width: 80%;
+    display: block;
+    transition: 0.5s;
+}
+
+/* 2. Header */
+/* 2.1 Header Nav */
+header{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--bg-color);
+    background-image: url(../img/header/blurry.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    margin: 0 290px;
+}
+
+header nav .nav-logo{
+    width: 200px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    display: block;
+    color: #333;
+    padding: 24px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 29px;
+}
+
+header nav ul li:hover a,
+header nav ul li:hover a::after{
+    color: var(--purple-color);
+}
+
+header nav ul li a::after{
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    font-size: 10px;
+    border-radius: 50%;
+    color: #333;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 30px;
+    content: '\f078';
+}
+
+header nav .nav-btn{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 2.2 Header Banner */
+header .banner{
+    align-items: center;
+    text-align: center;
+}
+
+header .banner h1{
+    width: 740px;
+    margin: 0 auto;
+}
